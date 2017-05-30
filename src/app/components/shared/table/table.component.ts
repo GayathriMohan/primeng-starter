@@ -6,7 +6,8 @@ import { CarService } from '../../../services/cars.service';
 @Component({
   selector: 'app-table',
   templateUrl: './table.component.html',
-  styleUrls: ['./table.component.css']
+  styleUrls: ['./table.component.css'],
+  providers: [CarService]
 })
 export class AppTableComponent {
 	private cars: Car[];  
