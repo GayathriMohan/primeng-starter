@@ -3,25 +3,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AppMainModule } from './components/main/main.module';
-import { AppSharedModule } from './components/shared/shared.module';
-import { CarService } from './services/cars.service';
-
-import { AppComponent } from './app.component';
+import { AppSharedModule } from '../shared/shared.module';
+import { AppMainComponent } from './main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+   AppMainComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
-    AppMainModule,
     AppSharedModule
   ],
-  providers: [CarService],
-  bootstrap: [AppComponent]
+  exports: [AppMainComponent]
 })
-export class AppModule { }
+export class AppMainModule { }

@@ -8,10 +8,11 @@ import { HttpModule } from '@angular/http';
 import { MultiSelectModule } from 'primeng/primeng';
 import { SelectItem } from 'primeng/primeng';
 import { DataTableModule} from 'primeng/primeng';
+import { AppTableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
-    // AppComponent
+    AppTableComponent
   ],
   imports: [
     BrowserModule,
@@ -19,9 +20,8 @@ import { DataTableModule} from 'primeng/primeng';
     FormsModule,
     HttpModule,
     MultiSelectModule,
-    DataTableModule,
+    DataTableModule
   ],
-  providers: []
-  // bootstrap: [AppComponent]
+  exports: [ AppTableComponent ]
 })
 export class AppSharedModule { }

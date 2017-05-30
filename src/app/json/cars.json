@@ -1,4 +1,4 @@
-[{
+carOptions: [{
     "brand": "Nissan",
     "color": "black"
 
@@ -17,4 +17,4 @@
   }, {
     "brand": "Audi",
     "color": "black"
-  }]
+  }];
