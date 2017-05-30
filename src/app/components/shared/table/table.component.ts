@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { SelectItem } from 'primeng/primeng';
 import { Car } from '../../../models/cars';
 import { CarService } from '../../../services/cars.service';
@@ -12,8 +12,16 @@ import { CarService } from '../../../services/cars.service';
 export class AppTableComponent {
 	private cars: Car[];  
     private columns: any[];
+    @Input() isSelected:boolean;
+    @Output() onRowClick: EventEmitter<any> = new EventEmitter();
+    @Input() isChecked:boolean;
+	@Output() checkboxTrue:EventEmitter<boolean> = new EventEmitter();
+	@Output() btnClicked: EventEmitter<any> = new EventEmitter();
     
-    constructor(private carService: CarService) { }
+    constructor(private carService: CarService) { 
+    	this.isSelected = false;
+    	this.isChecked = false;
+    }
 
     ngOnInit() {
         this.carService.getCars().then(cars => this.cars = cars);        
@@ -22,4 +30,12 @@ export class AppTableComponent {
             {field: 'color', header: 'Color'}
         ];
     }
+
+    selectedRow(event) {
+		this.onRowClick.emit(event);
+	}
+
+	displayState(event) {
+		this.checkboxTrue.emit(event);
+	}
  }

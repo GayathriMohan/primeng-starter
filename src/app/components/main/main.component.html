@@ -1,2 +1,1 @@
-<!-- <button>Click to open the table</button> -->
-<app-table></app-table>
+<app-table (onRowClick)="displayRowData($event)" [isSelected]="true" (checkboxTrue)="showState($event)"></app-table>
