@@ -2,43 +2,43 @@ import { Car } from '../models/cars';
 
 export const carOptions: Car[] = [{
     "brand": "Nissan",
-    "color": "black",
+    "color": "Black",
     "launch": "July 2012",
     "price":"10 lakhs"
 
   }, {
     "brand": "Ford",
-    "color": "silver",
-    "launch": "July 2012",
-    "price":"10 lakhs"
+    "color": "Silver",
+    "launch": "December 2003",
+    "price":"12 lakhs"
 
   }, {
     "brand": "Ford",
-    "color": "grey",
-    "launch": "July 2012",
-    "price":"10 lakhs"
+    "color": "Grey",
+    "launch": "December 2003",
+    "price":"12 lakhs"
 
   }, {
     "brand": "Nissan",
-    "color": "black",
+    "color": "Black",
     "launch": "July 2012",
     "price":"10 lakhs"
 
   }, {
     "brand": "Maruti Suzuki",
-    "color": "silver",
-    "launch": "July 2012",
-    "price":"10 lakhs"
+    "color": "Silver",
+    "launch": "January 1994",
+    "price":"6 lakhs"
 
   }, {
     "brand": "Audi",
-    "color": "black",
+    "color": "Black",
     "launch": "July 2012",
-    "price":"10 lakhs"
+    "price":"25 lakhs"
 
   },{
-    "brand": "Suzuki",
-    "color": "white",
-    "launch": "July 2012",
-    "price":"10 lakhs"
+    "brand": "Suzuki Dezire",
+    "color": "White",
+    "launch": "September 2007",
+    "price":"9 lakhs"
   }]

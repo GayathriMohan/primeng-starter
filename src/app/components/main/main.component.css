@@ -2,6 +2,8 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
+  font-family: "Roboto";
+  border: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 h2 {
@@ -16,13 +18,22 @@ td {
   width: 25%;
 }
 
+td {
+  color: #555555;
+}
+
+tr {
+  background-color: #fff;
+}
+
 tr:nth-child(even) {
-  background-color: #f2f2f2
+  background-color: #f2f2f2;
 }
 
 th {
   background-color: #ebedf0;
-  color: black;
+  color: #555555;
+  font-size: 16px;
   font-weight: normal;
   text-align: center;
 }
