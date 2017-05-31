@@ -26,7 +26,9 @@ export class AppTableComponent {
         this.carService.getCars().then(cars => this.cars = cars);        
         this.columns = [
             {field: 'brand', header: 'Brand'},
-            {field: 'color', header: 'Color'}
+            {field: 'color', header: 'Color'},
+            {field: 'launch', header: 'Launch'},
+            {field: 'price', header: 'Price'}
         ];
     }
 
