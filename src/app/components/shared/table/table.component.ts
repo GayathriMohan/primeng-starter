@@ -16,7 +16,6 @@ export class AppTableComponent {
     @Output() onRowClick: EventEmitter<any> = new EventEmitter();
     @Input() isChecked:boolean;
 	@Output() checkboxTrue:EventEmitter<boolean> = new EventEmitter();
-	@Output() btnClicked: EventEmitter<any> = new EventEmitter();
     
     constructor(private carService: CarService) { 
     	this.isSelected = false;
@@ -32,7 +31,7 @@ export class AppTableComponent {
     }
 
     selectedRow(event) {
-		this.onRowClick.emit(event);
+		this.onRowClick.emit(event.data);
 	}
 
 	displayState(event) {

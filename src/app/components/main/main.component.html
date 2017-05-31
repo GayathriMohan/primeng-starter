@@ -1,1 +1,16 @@
 <app-table (onRowClick)="displayRowData($event)" [isSelected]="true" (checkboxTrue)="showState($event)"></app-table>
+
+<table>
+    <thead>
+        <tr>
+            <th>Brand</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of selectedCars">    
+            <td>{{car.brand}}</td>
+            <td>{{car.color}} </td>
+        </tr>
+    </tbody>
+</table>
